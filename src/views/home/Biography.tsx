@@ -4,9 +4,9 @@ import Grid from "@mui/material/Grid2";
 import Container from "@mui/material/Container";
 import Typography from "../../components/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
-import text from '../../text/texts.json';
-import profile from '@assets/stick.png';
-import background from '@assets/curvylinesflipped.png';
+import text from "../../text/texts.json";
+import profile from "@assets/stick.png";
+import background from "@assets/curvylinesflipped.png";
 
 const ImageBackdrop = styled("div")(({ theme }) => ({
   position: "absolute",
@@ -25,7 +25,7 @@ const ImageWrapper = styled("div")(() => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "inherit"
+  backgroundColor: "inherit",
 }));
 
 const StyledImage = styled("img")(() => ({
@@ -37,7 +37,8 @@ const StyledImage = styled("img")(() => ({
   transitionDuration: "1500ms",
   transitionTimingFunction: "cubic-bezier(0.7, 0, 0.6, 1)",
   opacity: 1,
-  animation: "3000ms cubic-bezier(0.7, 0, 0.6, 1) 0s 1 normal none running materialize",
+  animation:
+    "3000ms cubic-bezier(0.7, 0, 0.6, 1) 0s 1 normal none running materialize",
 }));
 
 const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
@@ -111,7 +112,12 @@ function Biography() {
             opacity: 0.7,
           }}
         />
-        <Typography variant="h4" marked="center" component="h2" sx={{ mb: 14, alignSelf: "center" }}>
+        <Typography
+          variant="h4"
+          marked="center"
+          component="h2"
+          sx={{ mb: 14, alignSelf: "center" }}
+        >
           {text.biography.header}
         </Typography>
         <Grid container spacing={5}>
@@ -132,10 +138,7 @@ function Biography() {
                 }}
               >
                 <ImageWrapper>
-                  <StyledImage
-                    src={profile}
-                    alt="Dr Ezgi Dokuzlu Tezel"
-                  />
+                  <StyledImage src={profile} alt="Dr Ezgi Dokuzlu Tezel" />
                 </ImageWrapper>
               </Box>
               <ImageBackdrop className="imageBackdrop" />

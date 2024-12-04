@@ -1,49 +1,52 @@
 {
-    "contact": {
-        "header": "Contact me",
-        "description": "Description about contacting you here",
-        "telephone_number": "+90 535 516 89 40",
-        "email_address": "ezgi@gmail.com",
-        "telephone_text": "Telephone",
-        "email_text": "Email"
+  "contact": {
+    "header": "Contact me",
+    "description": "Description about contacting you here",
+    "telephone_number": "+90 535 516 89 40",
+    "email_address": "ezgi@gmail.com",
+    "telephone_text": "Telephone",
+    "email_text": "Email"
+  },
+  "top": {
+    "header": "Dr Ezgi Dokuzlu Tezel",
+    "description": "Some description about yourself here",
+    "button": "Contact me",
+    "bottom": "Extra text here"
+  },
+  "specialties": {
+    "first": {
+      "header": "Specialty 1",
+      "description": "Description 1"
     },
-    "top": {
-        "header": "Dr Ezgi Dokuzlu Tezel",
-        "description": "Some description about yourself here",
-        "button": "Contact me",
-        "bottom": "Extra text here"
+    "second": {
+      "header": "Specialty 2",
+      "description": "Description 2"
     },
-    "specialties": {
-        "first": {
-            "header": "Specialty 1",
-            "description": "Description 1"
-        },
-        "second": {
-            "header": "Specialty 2",
-            "description": "Description 2"
-        },
-        "third": {
-            "header": "Specialty 3",
-            "description": "Description 3"
-        },
-        "fourth": {
-            "header": "Specialty 4",
-            "description": "Description 4"
-        }
+    "third": {
+      "header": "Specialty 3",
+      "description": "Description 3"
     },
-    "biography": {
-        "header": "Who am I?",
-        "secondary_header": "About me",
-        "description": "Description about yourself here"
-    },
-    "footer": {
-        "header": "Get in touch",
-        "address": "Address",
-        "businessid": "Business id",
-        "extra": {
-            "text": "Registered with the",
-            "link_text": "Order of Psychologists",
-            "link": "https://www.ordinepsicologier.it/"
-        }
+    "fourth": {
+      "header": "Specialty 4",
+      "description": "Description 4"
     }
+  },
+  "biography": {
+    "header": "Who am I?",
+    "secondary_header": "About me",
+    "description": "Description about yourself here"
+  },
+  "footer": {
+    "header": "Get in touch",
+    "address": "Address",
+    "businessid": {
+      "text": "Business ID",
+      "businessid": "123456789"
+    },
+    "extra": {
+      "text": "Registered with the",
+      "link_text": "Order of Psychologists",
+      "link": "https://www.ordinepsicologier.it/"
+    }
+  }
 }

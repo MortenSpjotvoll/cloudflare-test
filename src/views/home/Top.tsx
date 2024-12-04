@@ -1,12 +1,13 @@
-import { Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { ParallaxBanner } from "react-scroll-parallax";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import dots from '@assets/dots.png';
-import background from '@assets/sky.jpg';
+import dots from "@assets/dots.png";
+import background from "@assets/sky.jpg";
 import { styled } from "@mui/material/styles";
-import text from '../../text/texts.json';
+import text from "../../text/texts.json";
+import Typography from "../../components/Typography";
+import Button from "../../components/Button";
 
 const ProductHeroLayoutRoot = styled("section")(({ theme }) => ({
   color: theme.palette.common.white,
@@ -36,17 +37,13 @@ export default function ProductHero() {
             alignItems: "center",
           }}
         >
-          <img
-            src={dots}
-            alt="wonder"
-            width="147"
-            height="80"
-          />
+          <img src={dots} alt="wonder" width="147" height="80" />
           <Typography
             color="inherit"
             align="center"
             component="h1"
             variant="h2"
+            marked="center"
           >
             {text.top.header}
             <span />

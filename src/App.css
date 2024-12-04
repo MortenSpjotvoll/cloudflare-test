@@ -41,7 +41,7 @@
   }
 }
 
-h1 > span {
+/* h1 > span {
   width: 73px;
   height: 4px;
   margin: 8px auto 0;
@@ -51,4 +51,4 @@ h1 > span {
 
 .MuiButton-colorSecondary {
   background-color: var(--secondary) !important;
-}
+} */

@@ -1,15 +1,15 @@
-import { Theme } from "@mui/material/styles";
-import { SxProps } from "@mui/system";
+import type { Theme } from "@mui/material/styles";
+import type { SxProps } from "@mui/system";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import Container from "@mui/material/Container";
 import Typography from "../../components/Typography";
-import background from '@assets/curvylines.png';
-import psychologist from '@assets/psychologist.png';
-import pregnant from '@assets/pregnant.png';
-import massage from '@assets/massage.png';
-import family from '@assets/family.png';
-import text from '../../text/texts.json';
+import background from "@assets/curvylines.png";
+import psychologist from "@assets/psychologist.png";
+import pregnant from "@assets/pregnant.png";
+import massage from "@assets/massage.png";
+import family from "@assets/family.png";
+import text from "../../text/texts.json";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -27,7 +27,15 @@ function ProductValues() {
         overflow: "hidden" /*, bgcolor: "secondary.light"*/,
       }}
     >
-      <Container sx={{ mt: 15, mb: 30, display: "flex", position: "relative", flexDirection: "column" }}>
+      <Container
+        sx={{
+          mt: 15,
+          mb: 30,
+          display: "flex",
+          position: "relative",
+          flexDirection: "column",
+        }}
+      >
         <Box
           component="img"
           src={background}

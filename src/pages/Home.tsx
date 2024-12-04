@@ -3,7 +3,7 @@ import Top from "../views/home/Top";
 import Values from "../views/home/Values";
 import withRoot from "../withRoot";
 import Biography from "../views/home/Biography";
-import Footer from "../views/Footer";
+import Footer from "../views/shared/Footer";
 
 function Index() {
   return (

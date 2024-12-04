@@ -3,9 +3,9 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import Link from "@mui/material/Link";
 import Container from "@mui/material/Container";
-import Typography from "../components/Typography";
+import Typography from "../../components/Typography";
 import { Gavel, LinkedIn } from "@mui/icons-material";
-import text from '../text/texts.json';
+import text from "../../text/texts.json";
 
 function Copyright() {
   return (
@@ -35,7 +35,7 @@ export default function Footer() {
       component="footer"
       sx={{ display: "flex", bgcolor: "secondary.light" }}
     >
-      <Container sx={{ my: 8, display: "flex" }}>
+      <Container sx={{ my: 8, display: "flex", marginBottom: "1em" }}>
         <Grid container spacing={5}>
           <Grid size={{ xs: 12, md: 6 }}>
             <Grid
@@ -61,13 +61,13 @@ export default function Footer() {
                   <Gavel color="action" />
                 </Box>
               </Grid>
-              <Grid >
+              <Grid>
                 <Copyright />
               </Grid>
             </Grid>
           </Grid>
 
-          <Grid >
+          <Grid>
             <Typography variant="h6" marked="left" gutterBottom>
               {text.footer.header}
             </Typography>
@@ -75,26 +75,34 @@ export default function Footer() {
               {text.footer.address}
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
-              {text.footer.businessid}
+              {text.footer.businessid.text}
+              {": "}
+              {text.footer.businessid.businessid}
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
-              {text.contact.telephone_text}:
-              <Link href={`tel:${text.contact.telephone_number.split(' ').join('')}`}>{text.contact.telephone_number}</Link>
+              {text.contact.telephone_text}
+              {": "}
+              <Link
+                href={`tel:${text.contact.telephone_number.split(" ").join("")}`}
+              >
+                {text.contact.telephone_number}
+              </Link>
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
-              {text.contact.email_text}:
+              {text.contact.email_text}
+              {": "}
               <Link href={`mailto:${text.contact.email_address}`}>
                 {text.contact.email_address}
               </Link>
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
-              {text.footer.extra.text}
+              {text.footer.extra.text}{" "}
               <Link href={text.footer.extra.link}>
                 {text.footer.extra.link_text}
               </Link>
             </Typography>
           </Grid>
-          <Grid >
+          <Grid>
             <Typography variant="caption">
               {"Icons made by "}
               <Link

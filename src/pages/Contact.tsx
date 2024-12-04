@@ -1,6 +1,6 @@
 import * as React from "react";
 import Typography from "../components/Typography";
-import AppFooter from "../views/Footer";
+import AppFooter from "../views/shared/Footer";
 import AppAppBar from "../views/contact/Top";
 import Body from "../views/contact/Body";
 import withRoot from "../withRoot";
@@ -12,7 +12,7 @@ import Avatar from "@mui/material/Avatar";
 import { Call, EmailRounded } from "@mui/icons-material";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
-import text from '../text/texts.json';
+import text from "../text/texts.json";
 
 function Contact() {
   return (
@@ -35,24 +35,36 @@ function Contact() {
           }}
         >
           <ListItem>
-            <ListItemButton component="a" href={`mailto:${text.contact.email_address}`}>
+            <ListItemButton
+              component="a"
+              href={`mailto:${text.contact.email_address}`}
+            >
               <ListItemAvatar>
                 <Avatar>
                   <EmailRounded />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText primary={text.contact.email_text} secondary={text.contact.email_address} />
+              <ListItemText
+                primary={text.contact.email_text}
+                secondary={text.contact.email_address}
+              />
             </ListItemButton>
           </ListItem>
           <Divider variant="inset" component="li" />
           <ListItem>
-            <ListItemButton component="a" href={`tel:${text.contact.telephone_number.split(' ').join('')}`}>
+            <ListItemButton
+              component="a"
+              href={`tel:${text.contact.telephone_number.split(" ").join("")}`}
+            >
               <ListItemAvatar>
                 <Avatar>
                   <Call />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText primary={text.contact.telephone_text} secondary={text.contact.telephone_number} />
+              <ListItemText
+                primary={text.contact.telephone_text}
+                secondary={text.contact.telephone_number}
+              />
             </ListItemButton>
           </ListItem>
         </List>
